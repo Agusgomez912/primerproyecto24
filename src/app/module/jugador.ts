@@ -4,4 +4,5 @@ export interface Jugador {
     equipo:string;
     edad:number;
     imagen:string;
+    alt:string;
 }
