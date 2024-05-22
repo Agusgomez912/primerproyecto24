@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <h1>registrate</h1>
+
+
+        <i class="mat-icon" style="font-size: 200px;">person</i>
+        <mat-form-field appearance="fill">
+            <mat-label>ingrese un nombre de usuario</mat-label>
+            <input matInput placeholder="EJ: pepe912">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+
+          
+
+          <mat-form-field appearance="fill">
+            <mat-label>ingrese su apellido</mat-label>
+            <input matInput placeholder="EJ: pepe912">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+
+
+          <mat-form-field appearance="fill">
+            <mat-label>ingrese su apellido</mat-label>
+            <input matInput placeholder="ej: pepitoflores82y@gmail.com">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+
+
+          <!--contraseña-->
+          <mat-form-field>
+            <mat-label>ingrese su contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-hint aling="start">minimo:6/{{input type=".value.lenght}}"></mat-hint>
+          </mat-form-field>
+
+          <!--boton para enviar la informacion a la base de datos-->
+        <button class="boton" mat-raised-button color="primary">registrarse</button>
+    </div>
+</div>
